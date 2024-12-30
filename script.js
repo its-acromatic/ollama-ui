@@ -16,6 +16,7 @@ async function sendMessage() {
     document.getElementById('user-input').value = '';
 
     try {
+        // Use correct URL for backend (local or remote IP)
         const response = await fetch('http://<your-pc-ip>:5000/query', {
             method: 'POST',
             headers: {
